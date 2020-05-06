@@ -4,7 +4,7 @@ void setup() {
  
 void draw() {
   background(255);
-  drawsphere(width/2, height/2, 50, 200);
+  drawsphere(width/2, height/2, 50, 400);
 }
  
 void drawsphere(float x , float y, float z, float radius) {
@@ -14,7 +14,7 @@ void drawsphere(float x , float y, float z, float radius) {
   stroke(0, 0, 255);
   sphere(radius);
   popMatrix();
-  if(radius > 120) {
+  if(radius > 100) {
     drawsphere(x + radius/2, y, z, radius/2);
     drawsphere(x - radius/2, y, z, radius/2);
     drawsphere(x, y + radius/2, z, radius/2);
