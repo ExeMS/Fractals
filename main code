@@ -1,0 +1,14 @@
+(Add cube class when done)
+
+
+
+cube cubes;
+
+void setup() {
+  size(1640,960,P3D);
+  cubes = new cube();
+  background(255);
+}
+void draw() {
+  cubes.display();
+}
