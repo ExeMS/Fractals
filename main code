@@ -1,6 +1,19 @@
-(Add cube class when done)
-
-
+class cube {
+  float x;
+  float y;
+  float z;
+  float size;
+  cube() {
+    x = width/2;
+    y = height/2;
+    }
+   void display() {
+     background(255);
+     translate(width/2, height/2);
+     noFill();
+     rotateY(PI/3);
+     box(500);
+}
 
 cube cubes;
 
